@@ -1,0 +1,24 @@
+pt-BR:
+  activerecord:
+    errors:
+      models:
+        project_user: 
+          attributes:
+            base: 
+              project_user_relation_must_be_unique: "Usuário já possui associação com o projeto"
+        project:
+          attributes:
+            base:
+              must_have_one_owner: "Deve ter exatamente 1 proprietário"
+              must_be_owner_to_delete: "Apenas o usuário Owner pode deletar o projeto"
+              user_dont_have_projects: "Nenhum projeto relacionado"
+              user_not_assigned_with_project: "Usuário não está relacionado a este projeto"
+              project_not_created: "Falha ao criar projeto"
+              user_without_permission: "Usuário sem permissão para editar projeto"
+        task:
+          attributes:
+            base:
+              date_conflict: "Já existe uma tarefa dentro deste período de tempo para este usuário"
+              expired_tasks_founded: "O usuário tem tarefas expiradas, portanto não pode receber uma nova tarefa"
+              invalid_date: "A data fornecida é inválida (data final maior que data inicial ou data inicial já passou)"
+              user_do_not_belongs_to_project: "Este usuário não pode ser associado a tarefa pois não pertence ao projeto"

@@ -1,0 +1,4 @@
+pt-BR:
+  api:
+    errors:
+      forbidden: "Ação não permitida"
